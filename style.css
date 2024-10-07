@@ -3,60 +3,132 @@
     box-sizing: border-box;
 }
 
-.background {
+body {
+    background: var(--Light-Grey, #D5E1EF);
+    font-family: outfit;
+}
+
+.box1 {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    width: 1600px;
-    height: 800px;
-    padding: 151px 0px 152px 0px;
     justify-content: center;
     align-items: center;
-    background: var(--Light-Grey, #D5E1EF);
-
 }
 
 .back {
-    
+    display: flex;
     width: 320px;
     height: 497px;
     border-radius: 20px;
     background: var(--White, #FFF);
     box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
-    padding: 15px 10px 15px 15px;
-    
+    padding: 16px 16px 24px 16px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-
-
-.img2 {
+.blucont {
+    background: url( ./Oval.png);
     display: flex;
     width: 288px;
     height: 288px;
-    background-color:#2C7DFA;
-    flex-shrink: 0;
+    border-radius: 10px;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+}
+.image1 {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    margin: 64px 64px 64px 64px;
+    position: absolute;
+    
 }
 
 .paragraph {
     width: 280px;
     color:  var(--Dark-Navy, #1F314F);
     text-align: center;
-    font-feature-settings: "liga"off  "clig" off;
     font-size: 22px;
-    font-family: outfit;
-    font-weight: 700;
     margin-top: 25px;
+    font-weight: 700;
     
     }
 
     .paragraph2 {
         color: var(--grey, #7d889e);
         text-align: center;
-        font-feature-settings: "liga"off  "clig" off;
-        font-family: outfit;
         font-size: 15px;
-        font-weight: 400;
         letter-spacing: o,188px;
         margin-top: 25px;
     }
+
+
+    
+@media only screen and (max-width 600px) {
+
+    body { font-family: outfit;}
+    .box1 {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 85px 27px 85px 28px;
+        background-color: #D5E1EF;
+    }  
+
+.back {
+    display: flex;
+    width: 320px;
+    height: 497px;
+    border-radius: 20px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px 16px 24px 16px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.blucont {
+    background: url( ./Oval.png);
+    display: flex;
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1 {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    margin: 64px 64px 64px 64px;
+    position: absolute;
+    
+}
+
+.paragraph {
+    width: 280px;
+    color:  var(--Dark-Navy, #1F314F);
+    text-align: center;
+    font-size: 22px;
+    margin-top: 25px;
+    font-weight: 700;
+    
+    }
+
+ .paragraph2 {
+        color: var(--grey, #7d889e);
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: o,188px;
+        margin-top: 25px;
+    }
+
+}
